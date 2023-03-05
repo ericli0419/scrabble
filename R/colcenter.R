@@ -5,7 +5,7 @@
 #' @return column-centered matrix
 #' @rdname colcenter
 #' @export 
-colcenter = function(m, by = 'mean') {
+colCenter = function(m, by = 'mean') {
     m = as.matrix(m)
     if (by == 'mean')  by = T
     else if (by == 'median') by = matrixStats::colMedians(m)
